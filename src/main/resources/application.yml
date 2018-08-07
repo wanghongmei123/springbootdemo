@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  servlet:
+    path:
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /WEB-INF/jsp/
+  thymeleaf:
+    cache: false
+    enabled: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hhh?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
